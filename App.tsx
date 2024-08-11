@@ -6,12 +6,13 @@
  */
 
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Card from './components/Card';
 
 function App(): React.JSX.Element {
   return (
     <View style={styles.textContainer}>
-      <Text style={styles.textHighlight}>Hello, world!</Text>
+      <Card title="Hello World" />
     </View>
   );
 }
