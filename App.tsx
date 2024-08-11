@@ -10,17 +10,22 @@ import {StyleSheet, Text, View} from 'react-native';
 
 function App(): React.JSX.Element {
   return (
-    <View style={styles.textHighlight}>
-      <Text>Hello, world!</Text>
+    <View style={styles.textContainer}>
+      <Text style={styles.textHighlight}>Hello, world!</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  textHighlight: {
+  textContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+
+  textHighlight: {
+    color: '#4287f5',
+    fontSize: 24,
   },
 });
 
